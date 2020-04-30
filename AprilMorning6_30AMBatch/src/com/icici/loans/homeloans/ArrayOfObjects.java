@@ -29,7 +29,7 @@ public class ArrayOfObjects
 
 }
 
-class Employeee
+class Employeee extends Object
 {
 	int eno;
 	String ename;
