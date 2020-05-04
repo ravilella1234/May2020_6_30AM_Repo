@@ -1,6 +1,5 @@
 package com.exceptions;
 
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ExceptionDemo 
@@ -26,9 +25,9 @@ public class ExceptionDemo
 			} 
 			catch (Exception e) 
 			{
-				//e.printStackTrace();
+				e.printStackTrace();
 				//System.out.println(e);
-				System.out.println("Denominator value should be greater than zero...");
+				//System.out.println("Denominator value should be greater than zero...");
 			}	
 		}
 
