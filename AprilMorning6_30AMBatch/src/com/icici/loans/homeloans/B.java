@@ -4,21 +4,12 @@ public  class B extends A // ISA Relationship
 {
 	public void m2()
 	{
-		System.out.println("iam m2 from class B");
-		System.out.println(x);
-		x=1000;
+		System.out.println("iam m2 from class B");	
 	}
 	
-	public  final strictfp void m1()
+	public   void m1()
 	{	
-		x=200;
-		System.out.println("iam m1 from class A");
-		System.out.println(x);
-	}
-	
-	public void m1()
-	{
-		System.out.println("iam overriden m1 from class B");
+		System.out.println("iam m1 from class A");	
 	}
 	
 	public static void main(String[] args) 

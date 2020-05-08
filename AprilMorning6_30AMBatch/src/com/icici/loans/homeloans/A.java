@@ -3,11 +3,11 @@ package com.icici.loans.homeloans;
 import java.util.Date;
 
 public class A {
-	private int x = 100;
+	public int x = 100;
 
 	public final static String cname = "vmware";
 
-	public final strictfp void m1() {
+	public  strictfp void m1() {
 		x = 200;
 		System.out.println("iam m1 from class A");
 		System.out.println(x);
