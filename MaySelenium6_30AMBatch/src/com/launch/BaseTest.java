@@ -6,7 +6,11 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 
 public class BaseTest 
 {
@@ -45,13 +49,27 @@ public class BaseTest
 		{
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\May Drivers\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", projectPath+"//drivers//chromedriver.exe");
-			driver = new ChromeDriver();
+			
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 8");
+			option.addArguments("--disable-notifications");
+			
+			driver = new ChromeDriver(option);
 		}
 		else if(p.getProperty(browser).equals("firefox")) 
 		{
 			//System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\May Drivers\\geckodriver.exe");
 			System.setProperty("webdriver.gecko.driver", projectPath+"//drivers//geckodriver.exe");
-			driver = new FirefoxDriver();
+			
+			ProfilesIni p = new ProfilesIni();
+			FirefoxProfile profile = p.getProfile("maychromeprofile");
+			
+			profile.setPreference("dom.webnotifications.enabled", false);
+			
+			FirefoxOptions option = new FirefoxOptions();
+			option.setProfile(profile);
+			
+			driver = new FirefoxDriver(option);
 		}
 	}
 	
