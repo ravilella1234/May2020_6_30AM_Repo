@@ -75,7 +75,8 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(childEnv.getProperty(url));
+		//driver.get(childEnv.getProperty(url));
+		driver.navigate().to(childEnv.getProperty(url));
 	}
 
 }
