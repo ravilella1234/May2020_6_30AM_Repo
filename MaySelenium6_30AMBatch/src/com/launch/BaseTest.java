@@ -71,6 +71,7 @@ public class BaseTest
 			
 			driver = new FirefoxDriver(option);
 		}
+		driver.manage().window().maximize();
 	}
 	
 	public static void navigateUrl(String url)
