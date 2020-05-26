@@ -1,0 +1,6 @@
+Initializing the Properties & configuration files......
+Opened the Browser : chrome
+Navigated to url : https://www.amazon.in
+Selected the option  Books By using the locator :- searchDropdownBox
+Entered the text Harry Portter by using the locator :- field-keywords
+Clicked on Search Button By using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
