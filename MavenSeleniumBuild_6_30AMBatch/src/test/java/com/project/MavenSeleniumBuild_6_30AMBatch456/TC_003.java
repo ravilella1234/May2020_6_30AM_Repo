@@ -6,6 +6,7 @@ import com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
 public class TC_003 extends BaseTest
@@ -13,14 +14,15 @@ public class TC_003 extends BaseTest
 	
   
   @BeforeMethod
-  public void beforeMethod() throws Exception 
+  @Parameters("browser")
+  public void beforeMethod(String bType) throws Exception 
   {
 	    init();
 		test=report.startTest("TC_003");
 		test.log(LogStatus.INFO, "Initializing the Properties & configuration files......");
 		
-		launchBrowser("chromebrowser");
-		test.log(LogStatus.PASS, "Opened the Browser : " + p.getProperty("chromebrowser"));
+		launchBrowser(bType);
+		test.log(LogStatus.PASS, "Opened the Browser : " + bType);
 		
 		navigateUrl("amazonurl");
 		test.log(LogStatus.PASS, "Navigated to url : " + childEnv.getProperty("amazonurl"));

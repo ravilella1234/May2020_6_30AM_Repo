@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest;
@@ -17,15 +18,16 @@ public class CheckBox1 extends BaseTest
 
 
 	  @BeforeMethod
-	  public void beforeMethod() throws Exception 
+	  @Parameters("browser")
+	  public void beforeMethod(String bType) throws Exception 
 	  {
 		
 		  init();
 			test=report.startTest("CheckBox1");
 			test.log(LogStatus.INFO, "Initializing the Properties & configuration files......");
 			
-			launchBrowser("chromebrowser");
-			test.log(LogStatus.PASS, "Opened the Browser : " + p.getProperty("chromebrowser"));
+			launchBrowser(bType);
+			test.log(LogStatus.PASS, "Opened the Browser : " + bType);
 			
 			navigateUrl("checkboxurl");
 			test.log(LogStatus.PASS, "Navigated to url : " + childEnv.getProperty("checkboxurl"));
@@ -35,8 +37,9 @@ public class CheckBox1 extends BaseTest
 	  
 	  
 	@Test
-	public void checkboxTest()
+	public void checkboxTest() throws Exception
 	{
+		Thread.sleep(3000);
 		List<WebElement> check=driver.findElements(By.xpath("//td[@class='table5']/input[@type='checkbox']"));
 		for(int i=0;i<check.size();i++)
 		{

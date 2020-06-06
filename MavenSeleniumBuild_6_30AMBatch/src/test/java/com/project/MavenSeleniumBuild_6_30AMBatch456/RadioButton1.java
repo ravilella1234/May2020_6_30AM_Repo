@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest;
@@ -15,15 +16,16 @@ public class RadioButton1 extends BaseTest
 {
 
 	@BeforeMethod
-	  public void beforeMethod() throws Exception 
+	@Parameters("browser")
+	  public void beforeMethod(String bType) throws Exception 
 	  {
 		
 		init();
 		test=report.startTest("RadioButton1");
 		test.log(LogStatus.INFO, "Initializing the Properties & configuration files......");
 		
-		launchBrowser("chromebrowser");
-		test.log(LogStatus.PASS, "Opened the Browser : " + p.getProperty("chromebrowser"));
+		launchBrowser(bType);
+		test.log(LogStatus.PASS, "Opened the Browser : " + bType);
 		
 		navigateUrl("radiourl");
 		test.log(LogStatus.PASS, "Navigated to url : " + childEnv.getProperty("radiourl"));
@@ -32,8 +34,9 @@ public class RadioButton1 extends BaseTest
 	
 	
 	@Test
-	public void checkboxTest()
+	public void checkboxTest() throws Exception
 	{
+		Thread.sleep(3000);
 		WebElement radio=driver.findElement(By.xpath("(//td[@class='table5'])[2]"));
 		List<WebElement> rbutton=radio.findElements(By.name("group1"));
 		for(int i=0;i<rbutton.size();i++)
