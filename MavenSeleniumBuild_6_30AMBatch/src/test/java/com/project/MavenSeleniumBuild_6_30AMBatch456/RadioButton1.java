@@ -15,7 +15,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class RadioButton1 extends BaseTest
 {
 
-	@BeforeMethod
+	@BeforeMethod(groups = {"regression","smoke"})
 	@Parameters("browser")
 	  public void beforeMethod(String bType) throws Exception 
 	  {
@@ -33,7 +33,7 @@ public class RadioButton1 extends BaseTest
 	  }
 	
 	
-	@Test
+	@Test(groups = {"regression","smoke"})
 	public void checkboxTest() throws Exception
 	{
 		Thread.sleep(3000);
@@ -46,7 +46,7 @@ public class RadioButton1 extends BaseTest
 	}
  
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","smoke"})
   public void afterMethod() 
   {
 	  driver.quit();

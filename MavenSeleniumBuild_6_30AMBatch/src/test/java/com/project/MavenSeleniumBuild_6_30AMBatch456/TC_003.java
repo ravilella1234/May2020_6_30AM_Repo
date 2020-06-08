@@ -13,7 +13,7 @@ public class TC_003 extends BaseTest
 {
 	
   
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void beforeMethod(String bType) throws Exception 
   {
@@ -29,7 +29,7 @@ public class TC_003 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
 	    selectOption("amazondropbox_id","Books");	
@@ -43,7 +43,7 @@ public class TC_003 extends BaseTest
   }
   
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void afterMethod() 
   {
 	  driver.quit();

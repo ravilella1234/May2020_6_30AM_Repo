@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14872" started-at="2020-06-06T02:20:00Z" finished-at="2020-06-06T02:20:15Z">
+  <suite name="Suite" duration-ms="29820" started-at="2020-06-08T02:04:20Z" finished-at="2020-06-08T02:04:50Z">
     <groups>
+      <group name="regression">
+        <method signature="CheckBox1.checkboxTest()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1@f2f2cc1]" name="checkboxTest" class="com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1"/>
+        <method signature="RadioButton1.checkboxTest()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1@3a079870]" name="checkboxTest" class="com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CheckBox1.checkboxTest()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1@f2f2cc1]" name="checkboxTest" class="com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1"/>
+        <method signature="RadioButton1.checkboxTest()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1@3a079870]" name="checkboxTest" class="com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="14872" started-at="2020-06-06T02:20:00Z" finished-at="2020-06-06T02:20:15Z">
-      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel">
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel@50a7bc6e]" name="test3" duration-ms="14537" started-at="2020-06-06T02:20:00Z" finished-at="2020-06-06T02:20:15Z">
+    <test name="Test" duration-ms="29820" started-at="2020-06-08T02:04:20Z" finished-at="2020-06-08T02:04:50Z">
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1@f2f2cc1]" name="beforeMethod" is-config="true" duration-ms="8867" started-at="2020-06-08T02:04:20Z" finished-at="2020-06-08T02:04:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel@50a7bc6e]" name="test2" duration-ms="11509" started-at="2020-06-06T02:20:00Z" finished-at="2020-06-06T02:20:12Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1@f2f2cc1]" name="checkboxTest" duration-ms="4304" started-at="2020-06-08T02:04:29Z" finished-at="2020-06-08T02:04:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel@50a7bc6e]" name="test1" duration-ms="14801" started-at="2020-06-06T02:20:00Z" finished-at="2020-06-06T02:20:15Z">
+        </test-method> <!-- checkboxTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1@f2f2cc1]" name="afterMethod" is-config="true" duration-ms="1867" started-at="2020-06-08T02:04:33Z" finished-at="2020-06-08T02:04:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1 -->
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1@3a079870]" name="beforeMethod" is-config="true" duration-ms="10505" started-at="2020-06-08T02:04:35Z" finished-at="2020-06-08T02:04:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1@3a079870]" name="checkboxTest" duration-ms="3210" started-at="2020-06-08T02:04:46Z" finished-at="2020-06-08T02:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1@3a079870]" name="afterMethod" is-config="true" duration-ms="1002" started-at="2020-06-08T02:04:49Z" finished-at="2020-06-08T02:04:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

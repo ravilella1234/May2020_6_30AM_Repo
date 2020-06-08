@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\paralleltestngmethod.xml</span>
+                    <span>D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\testnggrouping.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1" hash-for-method="checkboxTest">checkboxTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1" hash-for-method="checkboxTest">checkboxTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,28 +125,29 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel</span>
+              <span class="class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="checkboxTest">
+                  </a> <!-- checkboxTest -->
+                  <span class="method-name">checkboxTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test3">
-                  </a> <!-- test3 -->
-                  <span class="method-name">test3</span>
+                  <a name="checkboxTest">
+                  </a> <!-- checkboxTest -->
+                  <span class="method-name">checkboxTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,16 +155,25 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\paralleltestngmethod.xml</span>
+            <span class="header-content">D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\testnggrouping.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;Test&quot; parallel=&quot;methods&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel&quot;/&gt;
+      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.LinksTesting1&quot;/&gt;
+      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003&quot;/&gt;
+      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1&quot;/&gt;
+      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -182,7 +187,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,6 +197,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkboxTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkboxTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -208,24 +229,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
-data.setCell(0, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel')
-data.setCell(0, 3, 14801);
+data.setCell(0, 1, 'checkboxTest')
+data.setCell(0, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1')
+data.setCell(0, 3, 4304);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test3')
-data.setCell(1, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel')
-data.setCell(1, 3, 14537);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test2')
-data.setCell(2, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel')
-data.setCell(2, 3, 11509);
+data.setCell(1, 1, 'checkboxTest')
+data.setCell(1, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1')
+data.setCell(1, 3, 3210);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -240,9 +257,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.LinksTesting1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">linktesting1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">amazon</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -251,19 +282,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TestMethodParallel</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test3</span>
+              <div class="chronological-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.CheckBox1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test2</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">checkboxTest</span>
+                <span class="method-start">8868 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">13176 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.RadioButton1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">15046 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">checkboxTest</span>
+                <span class="method-start">25551 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">28764 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
