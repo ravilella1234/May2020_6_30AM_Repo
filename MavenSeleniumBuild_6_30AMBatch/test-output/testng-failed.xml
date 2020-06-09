@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003">
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest">
         <methods>
-          <include name="amazon"/>
+          <include name="orange"/>
+          <include name="blue"/>
+          <include name="white"/>
+          <include name="green"/>
         </methods>
-      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003 -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
