@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest">
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004">
         <methods>
-          <include name="orange"/>
-          <include name="blue"/>
-          <include name="white"/>
-          <include name="green"/>
+          <include name="beforeMethod"/>
+          <include name="assertbooleanAmazon"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

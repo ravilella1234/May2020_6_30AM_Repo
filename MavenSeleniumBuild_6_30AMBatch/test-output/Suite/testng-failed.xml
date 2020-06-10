@@ -3,17 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003">
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004">
         <methods>
-          <include name="amazon"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="assertEqualsAmazon"/>
         </methods>
-      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003 -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

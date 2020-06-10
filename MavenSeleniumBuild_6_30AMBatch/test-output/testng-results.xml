@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="1" ignored="3" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130" started-at="2020-06-09T01:29:29Z" finished-at="2020-06-09T01:29:29Z">
+  <suite name="Suite" duration-ms="13493" started-at="2020-06-10T02:01:07Z" finished-at="2020-06-10T02:01:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130" started-at="2020-06-09T01:29:29Z" finished-at="2020-06-09T01:29:29Z">
-      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest">
-        <test-method status="PASS" signature="orange()[pri:1, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest@5ef60048]" name="orange" duration-ms="21" started-at="2020-06-09T01:29:29Z" finished-at="2020-06-09T01:29:29Z">
+    <test name="Test" duration-ms="13493" started-at="2020-06-10T02:01:07Z" finished-at="2020-06-10T02:01:20Z">
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153]" name="beforeMethod" is-config="true" duration-ms="10088" started-at="2020-06-10T02:01:07Z" finished-at="2020-06-10T02:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orange -->
-        <test-method status="PASS" signature="white()[pri:2, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest@5ef60048]" name="white" duration-ms="2" started-at="2020-06-09T01:29:29Z" depends-on-methods="com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest.orange" finished-at="2020-06-09T01:29:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- white -->
-        <test-method status="SKIP" signature="blue()[pri:3, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest@5ef60048]" name="blue" duration-ms="2" started-at="2020-06-09T01:29:29Z" depends-on-methods="com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest.white" finished-at="2020-06-09T01:29:29Z">
-          <exception class="org.testng.SkipException">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="assertEqualsAmazon()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153]" name="assertEqualsAmazon" duration-ms="3326" started-at="2020-06-10T02:01:17Z" finished-at="2020-06-10T02:01:20Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Test is faild....]]>
+              <![CDATA[The following asserts failed:
+expected [Customer Servic] but found [Customer Service],
+Both links are not equal... expected [true] but found [false],
+error1 expected [true] but found [false],
+error3 expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Test is faild....
-at com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest.blue(DependancyTest.java:26)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Customer Servic] but found [Customer Service],
+Both links are not equal... expected [true] but found [false],
+error1 expected [true] but found [false],
+error3 expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004.assertEqualsAmazon(TC_004.java:87)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -50,42 +62,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blue -->
-        <test-method status="SKIP" signature="green()[pri:4, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest@5ef60048]" name="green" duration-ms="0" started-at="2020-06-09T01:29:29Z" depends-on-methods="com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest.blue" finished-at="2020-06-09T01:29:29Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method DependancyTest.green()[pri:4, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest@5ef60048] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method DependancyTest.green()[pri:4, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest@5ef60048] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- assertEqualsAmazon -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-06-10T02:01:20Z" finished-at="2020-06-10T02:01:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- green -->
-      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.DependancyTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
