@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="3" total="4" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test started Running:amazon]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png'> <img src='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Test has Failed:amazon]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="13493" started-at="2020-06-10T02:01:07Z" finished-at="2020-06-10T02:01:20Z">
+  <suite name="Suite" duration-ms="15581" started-at="2020-06-12T01:51:22Z" finished-at="2020-06-12T01:51:38Z">
     <groups>
+      <group name="regression">
+        <method signature="TC_003.amazon()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003@143640d5]" name="amazon" class="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC_003.amazon()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003@143640d5]" name="amazon" class="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="13493" started-at="2020-06-10T02:01:07Z" finished-at="2020-06-10T02:01:20Z">
-      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153]" name="beforeMethod" is-config="true" duration-ms="10088" started-at="2020-06-10T02:01:07Z" finished-at="2020-06-10T02:01:17Z">
+    <test name="Test" duration-ms="15581" started-at="2020-06-12T01:51:22Z" finished-at="2020-06-12T01:51:38Z">
+      <class name="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003@143640d5]" name="beforeMethod" is-config="true" duration-ms="10418" started-at="2020-06-12T01:51:22Z" finished-at="2020-06-12T01:51:32Z">
           <params>
             <param index="0">
               <value>
@@ -18,23 +33,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="assertEqualsAmazon()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153]" name="assertEqualsAmazon" duration-ms="3326" started-at="2020-06-10T02:01:17Z" finished-at="2020-06-10T02:01:20Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="amazon()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003@143640d5]" name="amazon" duration-ms="2032" started-at="2020-06-12T01:51:32Z" finished-at="2020-06-12T01:51:34Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [Customer Servic] but found [Customer Service],
-Both links are not equal... expected [true] but found [false],
-error1 expected [true] but found [false],
-error3 expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field-keyword']"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 022e1cce008b9dc5b4f763d702a08305
+*** Element info: {Using=name, value=field-keyword}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Customer Servic] but found [Customer Service],
-Both links are not equal... expected [true] but found [false],
-error1 expected [true] but found [false],
-error3 expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004.assertEqualsAmazon(TC_004.java:87)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field-keyword']"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 022e1cce008b9dc5b4f763d702a08305
+*** Element info: {Using=name, value=field-keyword}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.getElement(BaseTest.java:127)
+at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.typeText(BaseTest.java:153)
+at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003.amazon(TC_003.java:38)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -62,15 +100,24 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Test started Running:amazon]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png'> <img src='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[Test has Failed:amazon]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- assertEqualsAmazon -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-06-10T02:01:20Z" finished-at="2020-06-10T02:01:20Z">
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003@143640d5]" name="afterMethod" is-config="true" duration-ms="1757" started-at="2020-06-12T01:51:36Z" finished-at="2020-06-12T01:51:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004 -->
+      </class> <!-- com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

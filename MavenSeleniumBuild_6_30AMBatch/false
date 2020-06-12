@@ -1,6 +1,6 @@
-[1591754468.155][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 38576
-[1591754468.155][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1591754469.147][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND InitSession {
+[1591926683.431][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 35726
+[1591926683.431][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1591926684.504][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -18,9 +18,9 @@
       }
    }
 }
-[1591754469.171][INFO]: Populating Preferences file: {
+[1591926684.528][INFO]: Populating Preferences file: {
    "account_id_migration_state": 2,
-   "account_tracker_service_last_update": "13236225652114205",
+   "account_tracker_service_last_update": "13236399884233919",
    "autocomplete": {
       "retention_policy_last_version": 83
    },
@@ -44,42 +44,38 @@
    },
    "countryid_at_install": 18766,
    "data_reduction": {
-      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "151293", "0", "0", "359813", "1074886", "308195", "0", "0", "0", "0", "0", "464799", "0", "229420", "50985", "0", "548451", "0", "0", "0", "97322", "44531", "196864", "0", "0", "0", "684351" ],
-      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "151293", "0", "0", "359813", "1074886", "308195", "0", "0", "0", "0", "0", "464799", "0", "229420", "50985", "0", "548451", "0", "0", "0", "97322", "44531", "196864", "0", "0", "0", "684351" ],
+      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "151293", "0", "0", "359813", "1074886", "308195", "0", "0", "0", "0", "0", "464799", "0", "229420", "50985", "0", "548451", "0", "0", "0", "97322", "44531", "196864", "0", "0", "0", "730488" ],
+      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "151293", "0", "0", "359813", "1074886", "308195", "0", "0", "0", "0", "0", "464799", "0", "229420", "50985", "0", "548451", "0", "0", "0", "97322", "44531", "196864", "0", "0", "0", "730488" ],
       "last_update_date": "13236201000000000",
       "last_week_services_downstream_background_kb": {
 
       },
       "last_week_services_downstream_foreground_kb": {
+         "112189210": 2,
          "130931413": 18,
          "35473769": 0,
-         "35565745": 18,
-         "41424546": 8,
-         "54845618": 20,
-         "67052219": 1,
+         "35565745": 56,
+         "41424546": 48,
+         "54845618": 35,
+         "67052219": 0,
          "727528": 0,
-         "78917933": 720,
-         "88863520": 0
+         "78917933": 2240,
+         "88863520": 0,
+         "99279418": 1
       },
       "last_week_user_traffic_contenttype_downstream_kb": {
 
       },
-      "this_week_number": 2631,
+      "this_week_number": 2632,
       "this_week_services_downstream_background_kb": {
 
       },
       "this_week_services_downstream_foreground_kb": {
-         "112189210": 2,
-         "130931413": 17,
          "35473769": 0,
-         "35565745": 55,
-         "41424546": 48,
-         "54845618": 33,
+         "35565745": 2,
          "67052219": 0,
-         "727528": 0,
-         "78917933": 2200,
-         "88863520": 0,
-         "99279418": 1
+         "78917933": 80,
+         "88863520": 0
       },
       "this_week_user_traffic_contenttype_downstream_kb": {
 
@@ -87,7 +83,7 @@
    },
    "default_apps_install_state": 3,
    "domain_diversity": {
-      "last_reporting_timestamp": "13236225665802566"
+      "last_reporting_timestamp": "13236399889772971"
    },
    "download": {
       "directory_upgrade": true
@@ -124,11 +120,11 @@
    },
    "google": {
       "services": {
-         "signin_scoped_device_id": "ccf5cf72-a144-497f-935f-dfb97e4c16a5"
+         "signin_scoped_device_id": "41de7c76-2c52-4d67-8b90-17190d3c31bb"
       }
    },
-   "http_original_content_length": "4210910",
-   "http_received_content_length": "4210910",
+   "http_original_content_length": "4257047",
+   "http_received_content_length": "4257047",
    "invalidation": {
       "per_sender_topics_to_handler": {
          "1013309121859": {
@@ -140,7 +136,7 @@
       }
    },
    "language_model_counters": {
-      "en": 143
+      "en": 147
    },
    "media": {
       "device_id_salt": "D1C496E937CF9E15C1F653750E615160",
@@ -205,10 +201,10 @@
             },
             "client_hints": {
                "https://www.amazon.in:443,*": {
-                  "last_modified": "13236228018051980",
+                  "last_modified": "13236400082039346",
                   "setting": {
                      "client_hints": [ 4, 5, 6 ],
-                     "expiration_time": 1591840818.051966
+                     "expiration_time": 1592012882.03933
                   }
                }
             },
@@ -289,12 +285,12 @@
                   }
                },
                "https://www.amazon.in:443,*": {
-                  "last_modified": "13236228054896840",
+                  "last_modified": "13236228425665119",
                   "setting": {
                      "hasHighScore": false,
                      "lastMediaPlaybackTime": 0.0,
                      "mediaPlaybacks": 0,
-                     "visits": 74
+                     "visits": 75
                   }
                },
                "https://www.google.co.in:443,*": {
@@ -405,72 +401,72 @@
             },
             "site_engagement": {
                "http://echoecho.com:80,*": {
-                  "last_modified": "13236225655786992",
+                  "last_modified": "13236399886769912",
                   "setting": {
-                     "lastEngagementTime": 1.3236196855786874e+16,
+                     "lastEngagementTime": 1.3236339867801564e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 7.5,
                      "rawScore": 24.19962468284209
                   }
                },
                "http://tsrtc.com:80,*": {
-                  "last_modified": "13236225655787406",
+                  "last_modified": "13236399886770206",
                   "setting": {
-                     "lastEngagementTime": 1.3235858716640678e+16,
+                     "lastEngagementTime": 1.3236001728655368e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.0,
                      "rawScore": 3.0
                   }
                },
                "https://accounts.google.com:443,*": {
-                  "last_modified": "13236225655787109",
+                  "last_modified": "13236399886770011",
                   "setting": {
-                     "lastEngagementTime": 1.323585868345953e+16,
+                     "lastEngagementTime": 1.323600169547422e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.0,
                      "rawScore": 3.0
                   }
                },
                "https://www.amazon.in:443,*": {
-                  "last_modified": "13236228018091090",
+                  "last_modified": "13236400082075338",
                   "setting": {
-                     "lastEngagementTime": 1.3236228018091036e+16,
+                     "lastEngagementTime": 1.3236400082075304e+16,
                      "lastShortcutLaunchTime": 0.0,
-                     "pointsAddedToday": 15.0,
-                     "rawScore": 86.70532076239047
+                     "pointsAddedToday": 4.5,
+                     "rawScore": 85.78794470863303
                   }
                },
                "https://www.google.com:443,*": {
-                  "last_modified": "13236225655787182",
+                  "last_modified": "13236399886770062",
                   "setting": {
-                     "lastEngagementTime": 1.3236167624194538e+16,
+                     "lastEngagementTime": 1.3236310636209228e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 4.5,
                      "rawScore": 8.836314904656488
                   }
                },
                "https://www.icicibank.com:443,*": {
-                  "last_modified": "13236225655787243",
+                  "last_modified": "13236399886770108",
                   "setting": {
-                     "lastEngagementTime": 1.3235859324561882e+16,
+                     "lastEngagementTime": 1.3236002336576572e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 6.0,
                      "rawScore": 6.0
                   }
                },
                "https://www.redbus.in:443,*": {
-                  "last_modified": "13236225655787543",
+                  "last_modified": "13236399886771452",
                   "setting": {
-                     "lastEngagementTime": 1.3235858700241318e+16,
+                     "lastEngagementTime": 1.3236001712256008e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.0,
                      "rawScore": 3.0
                   }
                },
                "https://www.snapdeal.com:443,*": {
-                  "last_modified": "13236225655787329",
+                  "last_modified": "13236399886770153",
                   "setting": {
-                     "lastEngagementTime": 1.3235858744436818e+16,
+                     "lastEngagementTime": 1.3236001756451508e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.0,
                      "rawScore": 3.0
@@ -512,10 +508,10 @@
       },
       "created_by_version": "81.0.4044.138",
       "creation_time": "13233980681657171",
-      "exit_type": "Normal",
+      "exit_type": "Crashed",
       "exited_cleanly": true,
       "icon_version": 6,
-      "last_engagement_time": "13236228018091037",
+      "last_engagement_time": "13236400082075305",
       "last_time_obsolete_http_credentials_removed": 1589506853.567203,
       "managed_user_id": "",
       "name": "mayprofile",
@@ -543,7 +539,7 @@
       "system_web_app_last_update": "83.0.4103.61"
    }
 }
-[1591754469.204][INFO]: Populating Local State file: {
+[1591926684.568][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -563,15 +559,15 @@
    },
    "password_manager": {
       "os_password_blank": true,
-      "os_password_last_changed": "13236228053803013"
+      "os_password_last_changed": "13236228110614407"
    },
    "policy": {
-      "last_statistics_update": "13236225650417929"
+      "last_statistics_update": "13236399883433550"
    },
    "profile": {
       "info_cache": {
          "Default": {
-            "active_time": 1591752051.967985,
+            "active_time": 1591926284.181997,
             "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_47",
             "background_apps": false,
             "gaia_given_name": "",
@@ -590,11 +586,11 @@
             "user_name": ""
          }
       },
-      "last_active_profiles": [  ],
+      "last_active_profiles": [ "Default" ],
       "metrics": {
          "next_bucket_index": 2
       },
-      "profile_counts_reported": "13236225650483302"
+      "profile_counts_reported": "13236399883443466"
    },
    "profile_network_context_service": {
       "http_cache_finch_experiment_groups": "None None None"
@@ -605,9 +601,9 @@
       "secret": "OhZGb0fVIxKwM+DA4elA4BknvsPPBFVAxFkEkbQZZ71RnuK3Q/bGFdZG/ioMSRgg"
    },
    "shutdown": {
-      "num_processes": 5,
-      "num_processes_slow": 1,
-      "type": 1
+      "num_processes": 0,
+      "num_processes_slow": 0,
+      "type": 0
    },
    "ssl": {
       "rev_checking": {
@@ -622,7 +618,7 @@
       }
    },
    "tab_stats": {
-      "last_daily_sample": "13236225652097810",
+      "last_daily_sample": "13236399884202470",
       "max_tabs_per_window": 1,
       "total_tab_count_max": 1,
       "window_count_max": 1
@@ -632,9 +628,9 @@
    },
    "uninstall_metrics": {
       "installation_date2": "1574898982",
-      "launch_count": "114",
-      "page_load_count": "606",
-      "uptime_sec": "9548"
+      "launch_count": "117",
+      "page_load_count": "621",
+      "uptime_sec": "9904"
    },
    "updateclientdata": {
       "apps": {
@@ -642,35 +638,35 @@
             "cohort": "",
             "cohortname": "",
             "dlrc": 4908,
-            "pf": "0c6189f2-c84c-4000-bd1f-73bd39eaacc6"
+            "pf": "529d0d61-16f6-4fc5-9eb6-bd8f2aaf1e97"
          },
          "bklopemakmnopmghhmccadeonafabnal": {
             "cohort": "1:swl:",
             "cohorthint": "Auto",
             "cohortname": "Auto",
             "dlrc": 4908,
-            "pf": "20d87165-fbd3-428c-8a16-d638a6809d41"
+            "pf": "d98b80e8-a985-4dd3-b3a8-6e334b5b18f0"
          },
          "copjbmjbojbakpaedmpkhmiplmmehfck": {
             "cohort": "1:p1x:",
             "cohorthint": "Auto",
             "cohortname": "Auto",
             "dlrc": 4908,
-            "pf": "ee3b9be1-ee66-4d0f-8158-488211d81fb3"
+            "pf": "3e455340-33f8-4dd5-8385-197734b89508"
          },
          "ehgidpndbllacpjalkiimkbadgjfnnmc": {
             "cohort": "1:ofl:",
             "cohorthint": "stable64",
             "cohortname": "stable64",
             "dlrc": 4908,
-            "pf": "33aed543-cd55-4fa2-b67d-a11764757c08"
+            "pf": "f544bf63-80cc-45e0-ad81-19d56a75b05d"
          },
          "gcmjkmgdlgnkkcocmoeiminaijmmjnii": {
             "cohort": "1:bm1:",
             "cohorthint": "M54ToM99",
             "cohortname": "M54ToM99",
             "dlrc": 4908,
-            "pf": "8c4f28d7-6d9d-49d0-8aaa-8b92cafa9ee8"
+            "pf": "1e582ced-5989-4d04-8805-00a5865cb8f9"
          },
          "ggkkehgbnfjpeggfpleeakpidbkibbmn": {
             "cohort": "1:ut9:",
@@ -678,7 +674,7 @@
             "cohortname": "M80ToM83",
             "dlrc": 4908,
             "fp": "1.9fbf27ac6ca2d1c8e065e68b8fd7ca789342b27ab56f3eb4b9a05b87faf43ebb",
-            "pf": "3eabf16a-da9f-407f-9fe1-82de57b3f804",
+            "pf": "8ef2a9b4-90b2-4d1d-b659-8330d9d21119",
             "pv": "2020.6.2.834"
          },
          "giekcmmlnklenlaomppkphknjmnnpneh": {
@@ -686,13 +682,13 @@
             "cohorthint": "Auto",
             "cohortname": "Auto",
             "dlrc": 4908,
-            "pf": "5dae5190-fe72-4855-aeae-fb3b2dcd6a96"
+            "pf": "9bdb67f6-d584-44c0-ab2a-afe34d2bbfc7"
          },
          "gkmgaooipdjhmangpemjhigmamcehddo": {
             "cohort": "",
             "cohortname": "",
             "dlrc": 4908,
-            "pf": "ea9a30ec-4208-450b-8401-c555ef21d507"
+            "pf": "e2084710-0043-471c-b017-e280fc0a802d"
          },
          "hfnkpimlhhgieaddgfemjhofmfblmnib": {
             "cohort": "1:jcl:",
@@ -700,20 +696,20 @@
             "cohortname": "Auto",
             "dlrc": 4908,
             "fp": "1.61742087fee2aa5ac07339e2a9102a754db7b3d8edd4bc8cda7f4bd1c7fca975",
-            "pf": "857d6322-f33a-4c43-bdad-80547b499d13",
+            "pf": "02b7e681-c143-450e-87d8-bcbc82755fc2",
             "pv": "5924"
          },
          "hnimpnehoodheedghdeeijklkeaacbdc": {
             "cohort": "",
             "cohortname": "",
             "dlrc": 4908,
-            "pf": "12eddc86-1465-42f1-ab73-afbc2f3ba6be"
+            "pf": "bff50681-707a-4518-9175-f0f2acdbffa3"
          },
          "ihnlcenocehgdaegdmhbidjhnhdchfmm": {
             "cohort": "",
             "cohortname": "",
             "dlrc": 4908,
-            "pf": "bf54ad47-4984-4824-a97c-e459fc8a3171"
+            "pf": "d3cc7eb0-c128-49e5-9e20-3145a4f1d1df"
          },
          "jflookgnkcckhobaglndicnbbgbonegd": {
             "cohort": "1:s7x:",
@@ -721,7 +717,7 @@
             "cohortname": "Auto",
             "dlrc": 4908,
             "fp": "1.c7297eca8dfbf4b62087d1294d7be8565e44b8820c4d0f7be817cecf32a8545a",
-            "pf": "c45dabd4-38be-4d4a-a0d1-51df8d50365b",
+            "pf": "86281ea7-a60a-49df-aacf-72683504380d",
             "pv": "1343"
          },
          "khaoiebndkojlmppeemjhbpbandiljpe": {
@@ -729,11 +725,11 @@
             "cohorthint": "Auto",
             "cohortname": "Auto",
             "dlrc": 4908,
-            "pf": "948e26de-d53a-4203-9724-9dbea4da3d14"
+            "pf": "30ce8187-7ff5-4d40-b7ac-54a2b198a8bf"
          },
          "llkgjffcdpffmhiakmfcdcblohccpfmo": {
             "dlrc": 4908,
-            "pf": "e76d3090-84ff-44e1-a3e2-1580270ec3d1"
+            "pf": "ccd0da34-b0b8-4d93-8306-fed642f072ba"
          },
          "mimojjlkmoijpicakmndhoigimigcmbb": {
             "cohort": "1:d0j:",
@@ -741,14 +737,14 @@
             "cohortname": "Chrome [M50+]",
             "dlrc": 4908,
             "fp": "1.8962baf052b75de7e61b9e134a6d48c4c269a48c1249d16747f2f608c73bcf90",
-            "pf": "4eb1a584-a993-49c3-adce-bfea175a97a8",
+            "pf": "eae3cf79-36c5-47bb-a001-fd90c53581d5",
             "pv": "32.0.0.387"
          },
          "oimompecagnajdejgnnjijobebaeigek": {
             "cohort": "",
             "cohortname": "",
             "dlrc": 4908,
-            "pf": "a91d572a-0501-4ab3-ba39-0bf07ff6b9d5"
+            "pf": "96ca89d0-fa3a-421f-9c81-2620592fe202"
          }
       }
    },
@@ -756,48 +752,52 @@
       "client_id2": "73c9e22d-b2ef-4602-a610-a24c2b84ca64",
       "client_id_timestamp": "1574836563",
       "initial_logs2": [ {
-         "data": "H4sIAAAAAAAAAJWSTWwTRxTH5y222WzsZNmQyLLksgpCmA+Pdtfrz6ptcAwJFUSh4Uu0ENbOOLvOZnflOAm9mVRqCxLC4oC4gMSB9hiJU5oTsriEIyAOqRCR4ARSxAEEErRhvEAgVE2Ukd7sfPz+7817b5um7bOH5+cXL/FO6HYTO/Xw7Uuv0JqKYQmrshTDCTmaUIML118veju9xIoeGdgZ5LhjhjVkT46JfYcFTpYoK6diCUWZBs53JpUYTKj8jW+D1erMq3NLWzpRBKQHXKrqyw6yv55l+MtKqEVJYIWqJAknFSps7rHtYZOI+60CzqT39PUc2CtG9lsVYkZ+2CH25sSesuboRmFMjCuSmDPKpFCJ5WRZnBgbjA9KouN+dhzc/tdc9siz0FyWIFT9rtTB+XuINW5YxPXFP77ABz0imgKGhfONKRPnWgd0uzAyqU0QcZ+pjemC4BCn2Fg5pvYzKeMh0wxxMQU30oylkiJNJ/M1t6lbL9ujROzP7ROPGmSSlAVxVC8V86NDw4ViKZ93NGKX7KKt26Q4bBC9pBkhRMUos4sL9GkVgwbsNg1iVYTNBn1d2dLMqKUVzKhjjg8blgtDBq+I1O9eCW3LAmeoGJ1ww7/ns+h7LjC6NXOq/dqfbXv6PSdyLPC1J9VX3uAvd+ncSZsn4xiOxbEaV3j3LOg+a2eI839qezq5fPdVBOU93b3ZXMnPIh7RE2/K1+WrwvOlN4veGrTUANfgxxrchBrcpzZP7V9qlzw1+INaA7rqq8GLjVdgwyz42/+e6Ni0DdERQXVoZZsFXxrLtMDhQxefLtSBY1kBkuFbpw79Uwee9QsbJbf4UrihqUOA5QRPPK2o4d/EilaHdtYn+CUcT2JVxYqaVsLfzI3YdWhmGYFRlfDAo5mfGo42fOmojfUIn3U2/Hw2f64Om9mA0KzSfxPLiWT6A3wHttBCskGmUWQJpVAX6kX96Dg6jXQ4g6rgEl4eXAJRArrAJYASaJnw8N4gfCA+94HW5WO9BPyHWDsK/A/BfEHACgKtINbOFijBrEqsnu1reIOrzNLHAb8zoLQ2PZvSozNCy1seQgzPKIGmowdv31sIn9xNt/AO7imStfIEAAA=",
-         "hash": "dbUiUtbF1c23xRfT+AXkym9uOmg=",
-         "signature": "/b63n9gbaTIshEY6fUl3QEKClXC1fIv9WdJdamLbiPs=",
-         "timestamp": "1591754412"
+         "data": "H4sIAAAAAAAAAJWSS2gTURSG7xmTOJ0m7Ti1EgLRoSLGRy4zk8lT1JpG24qWan3hq07Sm87E6UxIY6u7WMEXiMGFuFFwoS4FV9WVBDd1qeKiIhZ0pVBcKAo+6s2o1SoqXjh37uP7z7nnnGm4aR/fMTk5fYEvBe41sGNPP751C82JCJawKksRHJPDMdU/dfX9tLvNTazwzr6Vfo7bbVgD9uiw2LND4GSJsnIiElOUm8B5jiZi/TGVv7bOX6mMvzszs6QNhUB6zCUqnnQ/e/I4w19UAk1KDCtUJUk4rlBhY6dtD5pE7LZyOJXc0NO5ZaMY6rbKxAxtXyF2ZcTOklbUjdywGFUkMWOUSK4cyciyODLcH+2XxKLzWbF1+e2J9M5XgYk0QaiyvrCI83YS64hhEccX//wc73eJaAwYFs7Wp1SUa+7T7dzhUW2EiJtMbVgXhCIp5uuroqkdIyU8YJoBLqLgepqRRFyk6aTWcAs69JI9RMTezCZxl0FGSUkQh/RCPjs0MJjLF7LZokbsgp23dZvkBw2iFzQjgKgYpVZxvh6tbNCAHaZBrLKw0KCvK1maGba0nBkumkcGDcuBIYXnROp1roSWWUFxIB8eccJ/5dNoM+cbWpo62HrlRsuGXtfeDAt89UXlndt/4gGd22jzZBzBkShWowrvnPmdZ60McN4fbU/GZ+8Wh1DW1dGVzhS8LOIRPXEnPO2eCrye+TDtrkJTFXAV9lXhFlThEbVJap+pXXBV4Tq1OnTZU4U38y/BvDvgbX0ysmjBMkRHCNWgmW0UPEks0wIHt51/OVUDjmUFiAfvHtz2qQY86xXmS07xpWBdUwMfywmuaFJRg6fEslaDVtYjeCUcjWNVxYqaVIJrJw7bNWhkGYFRlWDfs/H9dUfzfnXUwrqEnzobfH0ne6YGC1mf0KjSfxPLsXjyG3wfltBCsn6mXmQJJVA76kK9aA86hHQ4iirgEG4eHAJRAtrBIYASaJZw8W4/fCN+9oH+y8f/EvAb8e8o8AeC+YWAOQSaQ/w7W6AE81fi79m+hw+4wsx8H3CaAaW54dWYHh4Xmj7yEGB4RvE17Np67+FU8MBquoUv8VquW/IEAAA=",
+         "hash": "XJS/0Igw7zB5kOQkwuy8Ll535WE=",
+         "signature": "yDomjOTlqMqpcixzCSMAMAkgflXxPd/+X0s4g/el/Ls=",
+         "timestamp": "1591926283"
+      }, {
+         "data": "H4sIAAAAAAAAAONcn98YcuvWu0kCxVKTmDia7v75yirEb2GsZ6BnYmhgrGdmqGtmIvFg4Y93rEqsqXm6ocFaElxc4Zl5KfnlxQp+IUJchgZAtYYWxmZGRmFcbBUWZvFmJgJL7SQaGnZ87/wvr8SgwWhwjcuigc2Ji4NBgEGKwYjBisFXfedJp9DXUiedUhkYGuyzxLh43FPzSjPzUj3zSlJzBB73CkiwKDA0MTJ0MTI4CQiwVjA2MDKuYGS8wMh6g5HJi4s3V9kqTnTecmHHAJYoJg6GJBZnDyeXLB6QFRIMCmwWDA4MDYwf/v9+xzqDkeEH42+9Bqb/MMDYwcQ4iUnF3DjZMtXIKEU3ySg1TdfEzMBIN9HM0EA30cgk2SjJwiQ50czEiJ/zkMtLrg9+u5kFBKSYBASBAq+bMnR3CPH9EWAECjAZ8XKG+R65/EA2VgfIZQQARMNj5VEBAAA=",
+         "hash": "EoFONR53arPlMI+ZRcoVNOZMsW4=",
+         "signature": "uSCYycPXQcBvQz5Zs+ODsQmrX3bCBTtvbGLzJlKAmQA=",
+         "timestamp": "1591926476"
       } ],
       "last_seen": {
-         "BrowserMetrics": "13236227691895228",
-         "CrashpadMetrics": "13236227893230883",
+         "BrowserMetrics": "13236227983333165",
+         "CrashpadMetrics": "13236399883172612",
          "SetupMetrics": "13234888160336594"
       },
       "low_entropy_source3": 6011,
       "machine_id": 4809022,
       "ongoing_logs2": [ {
-         "data": "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",
-         "hash": "1HdlRBRllF8LnMJ94aprwUyWIsg=",
-         "signature": "p4QxVVWSkdC9zX0HkqZ7zB4e7VJ5NkeLuz5FkT3gOew=",
-         "timestamp": "1591754395"
+         "data": "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",
+         "hash": "zuQXbUalNLI+oL0aG1nZ9XxxZB0=",
+         "signature": "TxFSCgEM/f6sdaUM4YMg3D6e6KnC1oNQAmJzaJc4IjM=",
+         "timestamp": "1591754825"
       } ],
-      "session_id": 113,
+      "session_id": 116,
       "stability": {
          "breakpad_registration_fail": 0,
          "breakpad_registration_ok": 0,
-         "browser_last_live_timestamp": "13236228054969741",
+         "browser_last_live_timestamp": "13236400076356295",
          "child_process_crash_count": 0,
          "crash_count": 0,
          "debugger_not_present": 1,
          "debugger_present": 0,
          "deferred_count": 0,
          "discard_count": 0,
-         "exited_cleanly": true,
+         "exited_cleanly": false,
          "extension_renderer_crash_count": 0,
          "extension_renderer_failed_launch_count": 0,
          "extension_renderer_launch_count": 2,
          "gpu_crash_count": 0,
          "incomplete_session_end_count": 0,
          "launch_count": 1,
-         "page_load_count": 6,
-         "plugin_stats2": [  ],
+         "page_load_count": 4,
          "renderer_crash_count": 0,
          "renderer_failed_launch_count": 0,
          "renderer_hang_count": 0,
-         "renderer_launch_count": 6,
+         "renderer_launch_count": 4,
          "saved_system_profile": "CILd/PUFEg84My4wLjQxMDMuNjEtNjQY4KH47gUiBWVuLVVTKhgKCldpbmRvd3MgTlQSCjEwLjAuMTgzNjIyVgoGeDg2XzY0EKU+GICAuPeJ/x8iACgBMNYKOIAGQgoIABAAGgAyADoATSe5yUJV6xrJQmUAAIA/ahYKDEdlbnVpbmVJbnRlbBDjjRAYBCAAggEAigEASgoNbSM6XhWepxNBUARaAggAYgRDSEJEagwIABAAGAAgBjgAQACAAfD/++4FmAEA+AH7LoAC////////////AYgCAZICJDczYzllMjJkLWIyZWYtNDYwMi1hNjEwLWEyNGMyYjg0Y2E2NA==",
          "saved_system_profile_hash": "FF6A737F50F0B5B77FA9970625EBDC3972EB4E25",
          "session_end_completed": true,
@@ -807,15 +807,15 @@
          "version_mismatch_count": 0
       }
    },
-   "variations_crash_streak": 34,
+   "variations_crash_streak": 35,
    "was": {
       "restarted": false
    }
 }
-[1591754469.232][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
-[1591754469.232][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\DELL\AppData\Local\Temp\scoped_dir18656_556891541\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Profile 8"
-[1591754470.323][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1591754472.341][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE InitSession {
+[1591926684.603][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
+[1591926684.603][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\DELL\AppData\Local\Temp\scoped_dir4092_1803436481\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Profile 8"
+[1591926685.731][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1591926687.888][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
@@ -825,7 +825,7 @@
          "userDataDir": "C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 8"
       },
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:58835"
+         "debuggerAddress": "localhost:63573"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -843,65 +843,70 @@
       "unhandledPromptBehavior": "dismiss and notify",
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "06525800c25bc50f57c8b4c3c853ab22"
+   "sessionId": "022e1cce008b9dc5b4f763d702a08305"
 }
-[1591754472.435][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND MaximizeWindow {
+[1591926688.022][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND MaximizeWindow {
 
 }
-[1591754472.435][INFO]: Waiting for pending navigations...
-[1591754472.438][INFO]: Done waiting for pending navigations. Status: ok
-[1591754472.441][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1591754474.449][INFO]: Waiting for pending navigations...
-[1591754474.450][INFO]: Done waiting for pending navigations. Status: ok
-[1591754474.450][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE MaximizeWindow {
+[1591926688.022][INFO]: Waiting for pending navigations...
+[1591926688.023][INFO]: Done waiting for pending navigations. Status: ok
+[1591926688.024][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1591926690.035][INFO]: Waiting for pending navigations...
+[1591926690.036][INFO]: Done waiting for pending navigations. Status: ok
+[1591926690.036][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE MaximizeWindow {
    "height": 744,
    "width": 1382,
    "x": -8,
    "y": -8
 }
-[1591754474.460][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND Navigate {
+[1591926690.046][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND Navigate {
    "url": "https://www.amazon.in"
 }
-[1591754474.460][INFO]: Waiting for pending navigations...
-[1591754474.461][INFO]: Done waiting for pending navigations. Status: ok
-[1591754474.775][INFO]: Waiting for pending navigations...
-[1591754477.383][INFO]: Done waiting for pending navigations. Status: ok
-[1591754477.383][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE Navigate
-[1591754477.433][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND FindElement {
-   "using": "link text",
-   "value": "Customer Service"
+[1591926690.046][INFO]: Waiting for pending navigations...
+[1591926690.047][INFO]: Done waiting for pending navigations. Status: ok
+[1591926690.405][INFO]: Waiting for pending navigations...
+[1591926692.937][INFO]: Done waiting for pending navigations. Status: ok
+[1591926692.937][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE Navigate
+[1591926692.993][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#searchDropdownBox"
 }
-[1591754477.433][INFO]: Waiting for pending navigations...
-[1591754477.607][INFO]: Done waiting for pending navigations. Status: ok
-[1591754477.894][INFO]: Waiting for pending navigations...
-[1591754477.915][INFO]: Done waiting for pending navigations. Status: ok
-[1591754477.915][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "8a45c42e-58e7-4538-b698-abc1e272eda8"
+[1591926692.994][INFO]: Waiting for pending navigations...
+[1591926693.263][INFO]: Done waiting for pending navigations. Status: ok
+[1591926693.529][INFO]: Waiting for pending navigations...
+[1591926693.754][INFO]: Done waiting for pending navigations. Status: ok
+[1591926693.754][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "46e10561-e583-4fb0-910b-af3b0d9df159"
 }
-[1591754477.937][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND GetElementText {
-   "id": "8a45c42e-58e7-4538-b698-abc1e272eda8"
+[1591926693.815][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND TypeElement {
+   "id": "46e10561-e583-4fb0-910b-af3b0d9df159",
+   "text": "Books",
+   "value": [ "B", "o", "o", "k", "s" ]
 }
-[1591754477.937][INFO]: Waiting for pending navigations...
-[1591754478.000][INFO]: Done waiting for pending navigations. Status: ok
-[1591754478.122][INFO]: Waiting for pending navigations...
-[1591754478.159][INFO]: Done waiting for pending navigations. Status: ok
-[1591754478.160][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE GetElementText "Customer Service"
-[1591754478.187][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND FindElement {
-   "using": "link text",
-   "value": "Customer Service"
+[1591926693.815][INFO]: Waiting for pending navigations...
+[1591926693.845][INFO]: Done waiting for pending navigations. Status: ok
+[1591926694.844][INFO]: Waiting for pending navigations...
+[1591926694.848][INFO]: Done waiting for pending navigations. Status: ok
+[1591926694.849][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE TypeElement
+[1591926694.856][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND FindElement {
+   "using": "css selector",
+   "value": "*[name='field-keyword']"
 }
-[1591754478.187][INFO]: Waiting for pending navigations...
-[1591754478.188][INFO]: Done waiting for pending navigations. Status: ok
-[1591754478.381][INFO]: Waiting for pending navigations...
-[1591754478.496][INFO]: Done waiting for pending navigations. Status: ok
-[1591754478.496][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "8a45c42e-58e7-4538-b698-abc1e272eda8"
+[1591926694.856][INFO]: Waiting for pending navigations...
+[1591926694.858][INFO]: Done waiting for pending navigations. Status: ok
+[1591926694.893][INFO]: Waiting for pending navigations...
+[1591926694.895][INFO]: Done waiting for pending navigations. Status: ok
+[1591926694.895][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field-keyword']"}
+  (Session info: chrome=83.0.4103.61)
+[1591926695.023][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND Screenshot {
+
 }
-[1591754478.511][INFO]: [06525800c25bc50f57c8b4c3c853ab22] COMMAND ClickElement {
-   "id": "8a45c42e-58e7-4538-b698-abc1e272eda8"
+[1591926695.023][INFO]: Waiting for pending navigations...
+[1591926695.024][INFO]: Done waiting for pending navigations. Status: ok
+[1591926695.904][INFO]: Waiting for pending navigations...
+[1591926695.938][INFO]: Done waiting for pending navigations. Status: ok
+[1591926695.939][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABVYAAAJlCAYAAAAxcKmfAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XdcVfX/wPEX8yIg4AAHIKCIKCqIA/f6uhNHOHN+RS1RC7Wsr5WalaXlKkepLUfmoEz8pamhubc4M8CB4AIHXAW5zN8fFy5cuCxBL+L7+Xj0iHM+53Pu+x4OV..."
+[1591926696.275][INFO]: [022e1cce008b9dc5b4f763d702a08305] COMMAND Quit {
+
 }
-[1591754478.511][INFO]: Waiting for pending navigations...
-[1591754478.516][INFO]: Done waiting for pending navigations. Status: ok
-[1591754478.841][INFO]: Waiting for pending navigations...
-[1591754480.708][INFO]: Done waiting for pending navigations. Status: ok
-[1591754480.708][INFO]: [06525800c25bc50f57c8b4c3c853ab22] RESPONSE ClickElement
+[1591926696.611][INFO]: [022e1cce008b9dc5b4f763d702a08305] RESPONSE Quit

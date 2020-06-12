@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\Asserttestng.xml</span>
+                    <span>D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\Listnertestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004" hash-for-method="assertEqualsAmazon">assertEqualsAmazon</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003" hash-for-method="amazon">amazon</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -120,21 +120,37 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004</span>
+              <span class="class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="assertEqualsAmazon">
-                  </a> <!-- assertEqualsAmazon -->
-                  <span class="method-name">assertEqualsAmazon</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [Customer Servic] but found [Customer Service],
-	Both links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false]
-	at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004.assertEqualsAmazon(TC_004.java:87)
-... Removed 26 stack frames
+                  <a name="amazon">
+                  </a> <!-- amazon -->
+                  <span class="method-name">amazon</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;field-keyword&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-27L8JE7&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 022e1cce008b9dc5b4f763d702a08305
+*** Element info: {Using=name, value=field-keyword}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.getElement(BaseTest.java:127)
+	at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.typeText(BaseTest.java:153)
+	at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003.amazon(TC_003.java:38)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -143,17 +159,20 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\Asserttestng.xml</span>
+            <span class="header-content">D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch\Listnertestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.project.MavenSeleniumBuild_6_30AMBatchlistnersInteface.Listener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004&quot;/&gt;
+      &lt;class name=&quot;com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -177,6 +196,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">amazon</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">amazon</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -195,14 +230,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'assertEqualsAmazon')
-data.setCell(0, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004')
-data.setCell(0, 3, 3326);
+data.setCell(0, 1, 'amazon')
+data.setCell(0, 2, 'com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003')
+data.setCell(0, 3, 2032);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -213,24 +248,21 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">amazon</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test started Running:amazon</span>
+                <span class="reporter-method-output"><a href='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png'> <img src='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output">Test has Failed:amazon</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">amazon1</span>
-                <br/>
-                <span class="ignored-method-name">amazon</span>
-                <br/>
-                <span class="ignored-method-name">assertbooleanAmazon</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -239,7 +271,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -247,12 +279,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">assertEqualsAmazon</span>
-                <span class="method-start">10088 ms</span>
+                <span class="method-name">amazon</span>
+                <span class="method-start">10419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">13422 ms</span>
+                <span class="method-start">13744 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

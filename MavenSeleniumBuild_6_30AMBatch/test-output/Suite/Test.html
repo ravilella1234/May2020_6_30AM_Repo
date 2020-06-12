@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 10 07:31:07 IST 2020</td>
+<td>Started on:</td><td>Fri Jun 12 07:21:22 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13493 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15581 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004.assertEqualsAmazon()'><b>assertEqualsAmazon</b><br>Test class: com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Customer Servic] but found [Customer Service],
-	Both links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false]
-	at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004.assertEqualsAmazon(TC_004.java:87)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1266265220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1266265220'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Customer Servic] but found [Customer Service],
-	Both links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004.assertEqualsAmazon(TC_004.java:87)
+<td title='com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003.amazon()'><b>amazon</b><br>Test class: com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003<br/>
+<a href="#Output-1277108979" onClick='toggleBox("Output-1277108979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1277108979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1277108979">
+Test started Running:amazon<br/>
+<a href='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png'> <img src='D:\Feb-2020 Working Directory\MavenSeleniumBuild_6_30AMBatch//failure//Fri_Jun_12_07_21_22_IST_2020.png' height='100' width='100'/> </a><br/>
+Test has Failed:amazon<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;field-keyword&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-27L8JE7&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 022e1cce008b9dc5b4f763d702a08305
+*** Element info: {Using=name, value=field-keyword}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.getElement(BaseTest.java:127)
+	at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.typeText(BaseTest.java:153)
+	at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003.amazon(TC_003.java:38)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277108979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277108979'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;field-keyword&apos;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-27L8JE7&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 022e1cce008b9dc5b4f763d702a08305
+*** Element info: {Using=name, value=field-keyword}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.getElement(BaseTest.java:127)
+	at com.project.MavenSeleniumBuild_6_30AMBatch.BaseTest.typeText(BaseTest.java:153)
+	at com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003.amazon(TC_003.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -116,8 +160,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>com.project.MavenSeleniumBuild_6_30AMBatch456.TC_004@6646153</td></tr>
+<td>2</td>
+<td>com.project.MavenSeleniumBuild_6_30AMBatch456.TC_003@143640d5</td></tr>
 </table><p>
 </body>
 </html>
