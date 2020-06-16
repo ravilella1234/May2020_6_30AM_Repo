@@ -4,6 +4,7 @@
 
   <listeners>
   	<listener class-name="com.project.MavenSeleniumBuild_6_30AMBatchlistnersInteface.Listener"></listener>
+  	<listener class-name="com.project.MavenSeleniumBuild_6_30AMBatchlistnersInteface.RetryListener"></listener>
   </listeners>
 
   <test thread-count="5" name="Test">
