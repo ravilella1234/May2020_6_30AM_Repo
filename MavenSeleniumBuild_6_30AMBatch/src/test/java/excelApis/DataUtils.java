@@ -1,24 +1,12 @@
 package excelApis;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import java.util.Hashtable;
 
-public class DataManagementusingDataProvider 
+public class DataUtils 
 {
- 
-  @Test(dataProvider = "testData")
-  public void f(String Runmode,String Col1, String Col2, String Col3) 
-  {
-	  
-  }
-  
-  @DataProvider
-  public Object[][] testData() throws Exception
-  {
-	  
-	    ExcelAPI e = new ExcelAPI("C:\\Users\\DELL\\Desktop\\SuiteA.xlsx");
-		String sheetName = "Data";
-		String testcaseName = "TestA";
+	
+	public static Object[][] getTestData(ExcelAPI e, String sheetName, String testcaseName)
+	{
 		
 		int testStartRowNum = 0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testcaseName))
@@ -52,20 +40,26 @@ public class DataManagementusingDataProvider
 		
 		//read the data
 		int dataRow=0;
-		Object[][] data=new Object[rows][cols];
+		Object[][] data=new Object[rows][1];
+		Hashtable<String, String> table = null;
 		
 		for(int rNum=dataStartRowNum;rNum<dataStartRowNum+rows;rNum++)
 		{
+			table = new Hashtable<String, String>();
+			
 			for(int cNum=0;cNum<cols;cNum++)
 			{
-				//System.out.println(e.getCellData(sheetName, cNum, rNum));
-				data[dataRow][cNum]=e.getCellData(sheetName, cNum, rNum);
+				String key = e.getCellData(sheetName, cNum, colStartRowNum);
+				String value = e.getCellData(sheetName, cNum, rNum);
+				table.put(key, value);
 			}
+			data[dataRow][0] = table;
 			dataRow++;
 		}
 	  
 	  
 	return data;
-	  
-  }
+		
+	}
+
 }
