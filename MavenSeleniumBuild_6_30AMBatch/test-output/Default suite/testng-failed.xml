@@ -6,8 +6,8 @@
       <class name="pageObjectmodel.Login">
         <methods>
           <include name="afterMethod"/>
-          <include name="login"/>
           <include name="beforeMethod"/>
+          <include name="registration"/>
         </methods>
       </class> <!-- pageObjectmodel.Login -->
     </classes>

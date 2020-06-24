@@ -12,6 +12,7 @@ public class Login extends BaseTest
 {
 	
 	LoginPage page;
+	CustomerRegistrationPage reg;
 	
 	  @BeforeMethod
 	  @Parameters("browser")
@@ -23,7 +24,7 @@ public class Login extends BaseTest
 	  }	
 	
 	
-	  @Test
+	  @Test(enabled = false)
 	  public void login() throws Exception 
 	  {
 		  
@@ -31,19 +32,14 @@ public class Login extends BaseTest
 		  page.customerLogin();
 		  
 		  Assert.assertEquals(page.verifyLogin(), "Authentication failed.");
-		  
-		/*
-		 * driver.findElement(By.linkText("Sign in")).click(); Thread.sleep(3000);
-		 * driver.findElement(By.id("email")).sendKeys("qatest874878@gmail.com");
-		 * driver.findElement(By.id("passwd")).sendKeys("password");
-		 * driver.findElement(By.xpath("//p[@class='submit']//span[1]")).click();
-		 * 
-		 * String actualValue =
-		 * driver.findElement(By.xpath("//li[contains(text(),'Authentication failed.')]"
-		 * )).getText(); String expectedValue = "Authentication failed.";
-		 * 
-		 * Assert.assertEquals(actualValue, expectedValue);
-		 */
+	  }
+	  
+	  
+	  @Test
+	  public void registration() throws Exception
+	  {
+		  reg = new CustomerRegistrationPage(driver);
+		  reg.customerRegistration();
 	  }
   
   
