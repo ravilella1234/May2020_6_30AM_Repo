@@ -2,20 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="119" started-at="2020-07-31T01:30:53Z" finished-at="2020-07-31T01:30:54Z">
+  <suite name="Default suite" duration-ms="1746" started-at="2020-08-03T01:56:07Z" finished-at="2020-08-03T01:56:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="119" started-at="2020-07-31T01:30:53Z" finished-at="2020-07-31T01:30:54Z">
-      <class name="com.project.CRM.suitea.TC_001">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.CRM.suitea.TC_001@78b1cc93]" name="init" is-config="true" duration-ms="47" started-at="2020-07-31T01:30:53Z" finished-at="2020-07-31T01:30:53Z">
+    <test name="Default test" duration-ms="1746" started-at="2020-08-03T01:56:07Z" finished-at="2020-08-03T01:56:09Z">
+      <class name="com.project.CRM.suitea.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.CRM.suitea.LoginTest@21507a04]" name="init" is-config="true" duration-ms="1642" started-at="2020-08-03T01:56:07Z" finished-at="2020-08-03T01:56:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.project.CRM.suitea.TC_001@78b1cc93]" name="f" duration-ms="18" started-at="2020-07-31T01:30:53Z" finished-at="2020-07-31T01:30:54Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@21507a04]" name="f" duration-ms="16" started-at="2020-08-03T01:56:08Z" data-provider="getData" finished-at="2020-08-03T01:56:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=P2, Runmode=Y, UserName=U2, Browser=ie}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- com.project.CRM.suitea.TC_001 -->
+      </class> <!-- com.project.CRM.suitea.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

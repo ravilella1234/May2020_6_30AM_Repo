@@ -5,12 +5,15 @@ import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.CRM.utilities.ExcelAPI;
+
 public class BaseTest 
 {
 	public static FileInputStream fis;
 	public static String projectPath= System.getProperty("user.dir");
 	public static Properties parentEnv;
 	public static Properties childEnv;
+	public static ExcelAPI xls;
 	
 	public static void load() throws Exception
 	{
@@ -25,6 +28,10 @@ public class BaseTest
 		childEnv.load(fis);
 		String url = childEnv.getProperty("zohourl");
 		System.out.println(url);
+		
+		//init the xls file
+		//How do i know which suite Excel file to load
+		xls = new ExcelAPI(childEnv.getProperty("suitea_xls"));
 	}
 	
 	@BeforeTest
