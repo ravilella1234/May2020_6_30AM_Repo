@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.CRM.dirverClass.DriverScript;
 import com.project.CRM.utilities.ExcelAPI;
 
 public class BaseTest 
@@ -14,8 +15,10 @@ public class BaseTest
 	public static Properties parentEnv;
 	public static Properties childEnv;
 	public static ExcelAPI xls;
+	public String testName;
+	public DriverScript ds;
 	
-	public static void load() throws Exception
+	public  void load() throws Exception
 	{
 		fis = new FileInputStream(projectPath + "//src//test//resources//environment.properties");
 		parentEnv = new Properties();
@@ -29,9 +32,18 @@ public class BaseTest
 		String url = childEnv.getProperty("zohourl");
 		System.out.println(url);
 		
-		//init the xls file
+		
+		//init the TestName
+		testName = this.getClass().getSimpleName();
+		System.out.println(testName);
+		
 		//How do i know which suite Excel file to load
-		xls = new ExcelAPI(childEnv.getProperty("suitea_xls"));
+		String[] pack = this.getClass().getPackage().getName().split("\\.");
+		String suiteName = pack[pack.length-1];
+		System.out.println(suiteName);
+		
+		//init the xls file
+		xls = new ExcelAPI(childEnv.getProperty(suiteName+"_xls"));
 	}
 	
 	@BeforeTest
