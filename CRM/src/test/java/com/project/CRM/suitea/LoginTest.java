@@ -2,11 +2,11 @@ package com.project.CRM.suitea;
 
 import java.util.Hashtable;
 
+import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.project.CRM.BaseClass.BaseTest;
-import com.project.CRM.dirverClass.DriverScript;
 import com.project.CRM.utilities.DataUtils;
 
 public class LoginTest extends BaseTest
@@ -15,7 +15,11 @@ public class LoginTest extends BaseTest
   public void f(Hashtable<String, String> data) 
   {
 	  System.out.println("iam f test...");
-	  ds = new DriverScript();
+	  
+	  if(data.get("Runmode").equals("N"))
+		  throw new SkipException("Runmode is set to no ......");
+		  
+	  //ds = new DriverScript();
 	  ds.executeKeywords(xls, testName, data);
   }
   
