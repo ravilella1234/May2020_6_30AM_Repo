@@ -12,7 +12,7 @@ import com.project.CRM.utilities.DataUtils;
 public class LoginTest extends BaseTest
 {
   @Test(dataProvider = "getData")
-  public void f(Hashtable<String, String> data) 
+  public void f(Hashtable<String, String> data) throws Exception, Exception 
   {
 	  System.out.println("iam f test...");
 	  

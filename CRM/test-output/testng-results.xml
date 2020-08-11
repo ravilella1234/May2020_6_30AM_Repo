@@ -2,31 +2,31 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1471" started-at="2020-08-05T01:43:55Z" finished-at="2020-08-05T01:43:56Z">
+  <suite name="Default suite" duration-ms="1589" started-at="2020-08-11T01:55:18Z" finished-at="2020-08-11T01:55:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1471" started-at="2020-08-05T01:43:55Z" finished-at="2020-08-05T01:43:56Z">
+    <test name="Default test" duration-ms="1589" started-at="2020-08-11T01:55:18Z" finished-at="2020-08-11T01:55:19Z">
       <class name="com.project.CRM.suitea.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="init" is-config="true" duration-ms="1328" started-at="2020-08-05T01:43:55Z" finished-at="2020-08-05T01:43:56Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="init" is-config="true" duration-ms="1427" started-at="2020-08-11T01:55:18Z" finished-at="2020-08-11T01:55:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="f" duration-ms="35" started-at="2020-08-05T01:43:56Z" data-provider="getData" finished-at="2020-08-05T01:43:56Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="f" duration-ms="38" started-at="2020-08-11T01:55:19Z" data-provider="getData" finished-at="2020-08-11T01:55:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Password=zoho2015, Runmode=Y, ExpectedResults=LoginSuccess, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
+                <![CDATA[{Password=zoho2015, Runmode=Y, ExpectedResults=LoginSuccess, UserName=ravilella.2015@gmail.com, Url=https://www.zoho.com/, Browser=chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="f" duration-ms="18" started-at="2020-08-05T01:43:56Z" data-provider="getData" finished-at="2020-08-05T01:43:56Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="f" duration-ms="8" started-at="2020-08-11T01:55:19Z" data-provider="getData" finished-at="2020-08-11T01:55:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Password=P1, Runmode=N, ExpectedResults=LoginSuccess, UserName=U1, Browser=firefox}]]>
+                <![CDATA[{Password=P1, Runmode=N, ExpectedResults=LoginSuccess, UserName=U1, Url=, Browser=firefox}]]>
               </value>
             </param>
           </params>
