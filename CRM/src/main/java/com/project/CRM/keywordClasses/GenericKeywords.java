@@ -1,6 +1,7 @@
 package com.project.CRM.keywordClasses;
 
 import java.util.Hashtable;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GenericKeywords 
 {
@@ -86,18 +89,83 @@ public class GenericKeywords
 	{
 		WebElement element = null;
 		
-		if(objectKey.endsWith("_id")) {
-			element = driver.findElement(By.id(orProp.getProperty(objectKey)));
-		}else if(objectKey.endsWith("_name")) {
-			element = driver.findElement(By.name(orProp.getProperty(objectKey)));
-		}else if(objectKey.endsWith("_classname")) {
-			element = driver.findElement(By.className(orProp.getProperty(objectKey)));
-		}else if(objectKey.endsWith("_xpath")) {
-			element = driver.findElement(By.xpath(orProp.getProperty(objectKey)));
-		}else if(objectKey.endsWith("_css")) {
-			element = driver.findElement(By.cssSelector(orProp.getProperty(objectKey)));
+		try 
+		{
+			if(objectKey.endsWith("_id")) {
+				element = driver.findElement(By.id(orProp.getProperty(objectKey)));
+			}else if(objectKey.endsWith("_name")) {
+				element = driver.findElement(By.name(orProp.getProperty(objectKey)));
+			}else if(objectKey.endsWith("_classname")) {
+				element = driver.findElement(By.className(orProp.getProperty(objectKey)));
+			}else if(objectKey.endsWith("_xpath")) {
+				element = driver.findElement(By.xpath(orProp.getProperty(objectKey)));
+			}else if(objectKey.endsWith("_css")) {
+				element = driver.findElement(By.cssSelector(orProp.getProperty(objectKey)));
+			}
+			
+			WebDriverWait  wait = new WebDriverWait(driver, 30);
+			//To check Visibility of Object
+			wait.until(ExpectedConditions.visibilityOf(element));
+			
+			//To check state of the Object Whether it is Clickable or not
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+			//Report the failure Status
+			reportFailure();
 		}
 		
 		return element;
 	}
+	
+	public void validateElementPresence()
+	{
+		if(!isElementPresent(objectKey))
+		{
+			//Report Failure
+			reportFailure();
+		}
+	}
+	
+	
+	public  void reportFailure() 
+	{
+		//Fail the test in giving the Fail Status
+		
+		//Take the screenshots , and embedded the screenshots in physical location as well in HTML Reports
+	}
+
+	public boolean isElementPresent(String objectKey) 
+	{
+		List<WebElement> element = null;
+		
+		if(objectKey.endsWith("_id")) {
+			element = driver.findElements(By.id(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_name")) {
+			element = driver.findElements(By.name(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_classname")) {
+			element = driver.findElements(By.className(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_xpath")) {
+			element = driver.findElements(By.xpath(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_css")) {
+			element = driver.findElements(By.cssSelector(orProp.getProperty(objectKey)));
+		}
+		
+		if(element.size()==0)
+			return false;
+		else
+			return true;
+	}
+	
+	
+	
+
+	public void quit()
+	{
+		if(driver!=null)
+			driver.quit();
+	}
+	
 }

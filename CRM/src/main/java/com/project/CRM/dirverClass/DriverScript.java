@@ -21,6 +21,13 @@ public class DriverScript
 		this.orProp = orProp;
 	}
 
+	public void quit() 
+	{
+		if(app!=null)
+			app.quit();
+	}
+	
+	
 	public void executeKeywords(ExcelAPI xls,String testName,Hashtable<String, String> testData) throws Exception, SecurityException
 	{
 		System.out.println("iam driverscript class....");

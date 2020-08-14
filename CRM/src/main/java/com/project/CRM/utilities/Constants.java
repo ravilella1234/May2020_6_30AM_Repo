@@ -11,5 +11,4 @@ public class Constants
 	public static final String RUNMODE_NO = "N";
 	public static final String RUNMODE_YES = "Y";
 	
-
 }

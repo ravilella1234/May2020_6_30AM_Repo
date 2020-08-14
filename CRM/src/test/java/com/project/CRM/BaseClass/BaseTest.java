@@ -3,6 +3,7 @@ package com.project.CRM.BaseClass;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.project.CRM.dirverClass.DriverScript;
@@ -59,6 +60,13 @@ public class BaseTest
     {
 		 System.out.println("iam beforetest from BaseTest Class");
 		  load();
+	}
+	
+	@AfterTest
+	public void killInstance()
+	{
+		if(ds!=null)
+			ds.quit();
 	}
 
 }

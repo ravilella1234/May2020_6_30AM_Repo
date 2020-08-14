@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28839" started-at="2020-08-13T01:25:34Z" finished-at="2020-08-13T01:26:03Z">
+  <suite name="Default suite" duration-ms="22333" started-at="2020-08-14T01:50:27Z" finished-at="2020-08-14T01:50:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28839" started-at="2020-08-13T01:25:34Z" finished-at="2020-08-13T01:26:03Z">
+    <test name="Default test" duration-ms="22333" started-at="2020-08-14T01:50:27Z" finished-at="2020-08-14T01:50:50Z">
       <class name="com.project.CRM.suitea.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="init" is-config="true" duration-ms="2380" started-at="2020-08-13T01:25:34Z" finished-at="2020-08-13T01:25:36Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.CRM.suitea.LoginTest@475e586c]" name="init" is-config="true" duration-ms="1636" started-at="2020-08-14T01:50:27Z" finished-at="2020-08-14T01:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="f" duration-ms="26318" started-at="2020-08-13T01:25:36Z" data-provider="getData" finished-at="2020-08-13T01:26:03Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@475e586c]" name="f" duration-ms="19069" started-at="2020-08-14T01:50:29Z" data-provider="getData" finished-at="2020-08-14T01:50:48Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@6295d394]" name="f" duration-ms="3" started-at="2020-08-13T01:26:03Z" data-provider="getData" finished-at="2020-08-13T01:26:03Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.CRM.suitea.LoginTest@475e586c]" name="f" duration-ms="2" started-at="2020-08-14T01:50:48Z" data-provider="getData" finished-at="2020-08-14T01:50:48Z">
           <params>
             <param index="0">
               <value>
@@ -68,6 +68,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
+        <test-method status="PASS" signature="killInstance()[pri:0, instance:com.project.CRM.suitea.LoginTest@475e586c]" name="killInstance" is-config="true" duration-ms="1507" started-at="2020-08-14T01:50:48Z" finished-at="2020-08-14T01:50:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killInstance -->
       </class> <!-- com.project.CRM.suitea.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
