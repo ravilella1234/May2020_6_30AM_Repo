@@ -83,6 +83,15 @@ public class GenericKeywords
 	public void verifyTitle()
 	{
 		System.out.println("Title verified...");
+		String expectedTitle = orProp.getProperty(objectKey);
+		String actualTitle = driver.getTitle();
+		if(!expectedTitle.equals(actualTitle))
+		{
+			//Report the failure Status
+			reportFailure("Title doesn't match, got the title as :-" +actualTitle);
+		}
+		
+		
 	}
 	
 	public WebElement getElement(String objectKey)
@@ -114,7 +123,7 @@ public class GenericKeywords
 		{
 			e.printStackTrace();
 			//Report the failure Status
-			reportFailure();
+			reportFailure("Element is not identified :- " + element);
 		}
 		
 		return element;
@@ -125,14 +134,15 @@ public class GenericKeywords
 		if(!isElementPresent(objectKey))
 		{
 			//Report Failure
-			reportFailure();
+			reportFailure("Element is not found :- " + objectKey);
 		}
 	}
 	
 	
-	public  void reportFailure() 
+	public  void reportFailure(String failureMsg) 
 	{
 		//Fail the test in giving the Fail Status
+		System.out.println(failureMsg);
 		
 		//Take the screenshots , and embedded the screenshots in physical location as well in HTML Reports
 	}
