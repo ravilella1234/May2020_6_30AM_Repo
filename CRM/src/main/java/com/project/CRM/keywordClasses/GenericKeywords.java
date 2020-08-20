@@ -13,6 +13,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 public class GenericKeywords 
 {
 	public  Properties orProp;
@@ -20,7 +23,13 @@ public class GenericKeywords
 	public String dataKey;
 	public Hashtable<String, String> data;
 	public WebDriver driver;
+	public ExtentTest test;
 	
+	
+
+	public void setTest(ExtentTest test) {
+		this.test = test;
+	}
 
 	public void setOrProp(Properties orProp) {
 		this.orProp = orProp;
@@ -42,6 +51,7 @@ public class GenericKeywords
 	{
 		String browser = data.get(dataKey);
 		System.out.println("Opening the Browser....." + browser);
+		test.log(Status.INFO, "Opening the Browser....." + browser);
 		
 		if(browser.equals("chrome")) 
 		{
@@ -63,20 +73,21 @@ public class GenericKeywords
 	public void navigateUrl()
 	{
 		System.out.println("Navigating to website....." + data.get(dataKey));
+		test.log(Status.INFO, "Navigating to website....." + data.get(dataKey));
 		driver.get(data.get(dataKey));
 	}
 	
 	public void click()
 	{
 		System.out.println("Clicking on the element...." + orProp.getProperty(objectKey));
-		//driver.findElement(By.xpath(orProp.getProperty(objectKey))).click();
+		test.log(Status.INFO, "Clicking on the element...." + orProp.getProperty(objectKey));
 		getElement(objectKey).click();
 	}
 	
 	public void type()
 	{
 		System.out.println("Typing the text....." + orProp.getProperty(objectKey) +"-------" + data.get(dataKey));
-		//driver.findElement(By.xpath(orProp.getProperty(objectKey))).sendKeys(data.get(dataKey));
+		test.log(Status.INFO, "Typing the text....." + orProp.getProperty(objectKey) +"-------" + data.get(dataKey));
 		getElement(objectKey).sendKeys(data.get(dataKey));
 	}
 	

@@ -6,7 +6,10 @@ import java.util.Properties;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.project.CRM.dirverClass.DriverScript;
+import com.project.CRM.reports.ExtentManager;
 import com.project.CRM.utilities.ExcelAPI;
 
 public class BaseTest 
@@ -19,6 +22,8 @@ public class BaseTest
 	public static ExcelAPI xls;
 	public String testName;
 	public DriverScript ds;
+	public ExtentReports rep ;
+	public ExtentTest test;
 	
 	public  void load() throws Exception
 	{
@@ -60,6 +65,9 @@ public class BaseTest
     {
 		 System.out.println("iam beforetest from BaseTest Class");
 		  load();
+		  rep = ExtentManager.getInstance(parentEnv.getProperty("reportPath"));
+		  test = rep.createTest(testName);
+		  ds.setTest(test);
 	}
 	
 	@AfterTest
@@ -67,6 +75,7 @@ public class BaseTest
 	{
 		if(ds!=null)
 			ds.quit();
+		rep.flush();
 	}
 
 }
