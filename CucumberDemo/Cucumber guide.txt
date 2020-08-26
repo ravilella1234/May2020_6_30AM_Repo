@@ -1,0 +1,27 @@
+BDD F/W
+--------
+
+BDD - Behaviour driver development
+
+sample.feature
+--------------
+I open the Browser
+And i goto google.com
+And i search 
+
+Cucumber - is a tool
+
+Steps
+-------
+1) Create a new maven project
+2) Add the dependencies  - Cucumber Java, Cucumber-Junit, Junit, Selenium Java
+3) Create a folder Features under src/test/resources
+4) Under the Features folder create a new feature file as login.feature
+5) Download cucmber plugin from the eclipse Marketplace
+6) Create feature file & add contents
+7) Run the feature file
+8) Add step Definitions/Glue Code
+9) Create the RunnerClass
+10) add the monochrome parameter for better results format
+11) Create and add the Cucumber Options for generating reports --(HTML,JSON,JUNIT)
+
