@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.01"/>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="1.552">
+<testcase classname="Amazon Product Test" name="Verifying login is successful with valid credientials" time="0.254">
+<system-out><![CDATA[Given user should be on login page..........................................passed
+When user fills username and password.......................................passed
+And Clicks on signIn button.................................................passed
+Then User is navigated to the main page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Product Test" name="To check product added to addToCart Page" time="0.013">
+<system-out><![CDATA[Given user is on products page..............................................passed
+When user should selects the product........................................passed
+Then product should add to cartpage.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
